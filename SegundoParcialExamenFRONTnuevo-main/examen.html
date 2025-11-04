@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de Certificación JavaScript</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">JavaScript Cert</a>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="certificados.html" class="nav-link">Certificaciones</a>
+                    <span id="user-display" class="nav-user">Invitado</span>
+                    <button id="login-btn" class="btn-login">Iniciar Sesión</button>
+                    <button id="logout-btn" class="btn-logout" style="display: none;">Cerrar Sesión</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="access-denied" style="display: none; text-align: center; padding: 2rem;">
+            <h2>Acceso Denegado</h2>
+            <p>No tienes acceso a esta página. Debes iniciar el examen desde la página de certificaciones.</p>
+            <button onclick="goToCertifications()" class="btn-primary">Volver a Certificaciones</button>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+
+        <div class="footer-logo-section">
+            <img src="imagenes/logo.png" alt="ProgramaCert Logo" class="footer-logo">
+            <div class="footer-logo-text">
+            <h3>ProgramaCert</h3>
+            <p>Tu puerta de entrada al reconocimiento profesional en el sector tecnológico.</p>
+            <p>Con ProgramaCert valida, certifica y destáca.</p>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="certificados.html">Certificaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: programacert@gmail.com</p>
+            <p>
+            <a href="https://www.instagram.com/programacert?utm_source=qr&igsh=ajkycWZlODN2ZjFh" target="_blank">
+                Instagram: @programacert
+            </a>
+            </p>
+            <p>Dirección: 123 Tech Avenue, Silicon Valley, CA</p>
+        </div>
+        </div>
+
+        <div class="copyright">
+        <p>&copy; 2025 ProgramaCert. Todos los derechos reservados.</p>
+        </div>
+    </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
